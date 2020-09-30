@@ -4,9 +4,12 @@
     <title>Protect Dummy</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/882d6fd4b6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <%- include("partials/header.ejs")%>
@@ -16,100 +19,255 @@
 
           <div class="col-12 portada">
             <div class="row" style="display: flex;align-items: center;justify-content: center;">
-              <h2 class="col-12 txtP">Your life is safe with</h2>
-              <h1 class="col-12 txtP">SECURE GUARD</h1>
-              <p class="col-11 col-lg-6 txtP">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam voluptatibus excepturi ab assumenda ipsum incidunt nam eum!</p>
-              <div class="col-8 btns">
-                <button class="col-6 col-lg-2 boton">ABOUT US</button>
-                <button class="col-6 col-lg-2 boton" style="margin-left: 15px;">CONTACTS</button>
+              <h2 class="col-12 txtP">SISTEMAS</h2>
+              <div class="col-12 align">
+                <h1 class="col-12 col-lg-7 txtP">TECNOLOGIA EN SEGURIDAD Y CONTROL</h1>
+              </div>
+                <button class="col-4 col-lg-1 boton lost">NOSOTROS</button>
+                <button class="col-4 col-lg-1 boton" style="margin-left: 15px;">CONTACTO</button>
               </div>
             </div>
           </div>
 
-          <div class="col-12 exp">
-            <div class="container">
-              <div class="row" style="display: flex;align-items: center;justify-content: center;">
-                <div class="col-12 col-lg-6">
-                  <div class="col-12">
-                    Imagen
-                  </div>
-                  <p class="col-12 descE">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui odio eos a dolores quibusdam consequatur labore, nobis omnis. Alias perspiciatis cumque distinctio pariatur sunt vitae voluptatum sint. Voluptatem, est aliquid?</p>
-                  <div class="col-12">
-                    <div class="row">
-                      <p class="col-6"><i class="fas fa-check"></i> Special Events</p>
-                      <p class="col-6"><i class="fas fa-check"></i> Special Events</p>
-                      <p class="col-6"><i class="fas fa-check"></i> Special Events</p>
-                      <p class="col-6"><i class="fas fa-check"></i> Special Events</p>
-                      <p class="col-6"><i class="fas fa-check"></i> Special Events</p>
-                      <p class="col-6"><i class="fas fa-check"></i> Special Events</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-6 video">
-                  <iframe width="100%" height="315" src="https://www.youtube.com/embed/ThiCMd5kGbE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 serv">
+          <div class="col-12 serv desk">
             <div class="container">
               <div class="row" style="display: flex;align-items: center;justify-content: center;">
                   <h6 class="col-12 we">WE PROVIDE</h6>
-                  <h4 class="col-12 se">SECURITY SERVICES</h4>
-                  <p class="col-12 col-lg-6 serv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta cum quaerat dolor voluptas at nobis accusantium.</p>
+                  <h4 class="col-12 se">NUESTROS SERVICIOS</h4>
+                  <p class="col-12 col-lg-6 serv">Brindamos servicios IT con un claro enfoque en tecnologías de seguridad y control, seguridad informática y administración de redes</p>
                   <div class="col-12">
                     <div class="row" style="display: flex;align-items: center;justify-content: center;">
-                    <div class="col-3 servicio" style="margin-right: 40px;">
+                    <div class="col-6 col-lg-3 servicio" style="margin-right: 40px;">
                       <div class="row" style="display: flex;align-items: center;justify-content: center;">
-                      <h6 class="col-12 servTitle">ARMED SECURITY</h6>
-                      <p class="col-12 servDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <div class="col-12 align">
+                          <img class="col-5 servImg" src="./images/protec-servicio-1.png" alt="">
+                        </div>
+                        <h6 class="col-12 col-lg-10 servTitle">REDES Y TELECOMUNICACIONES</h6>
+                        <p class="col-12 servDesc">Aseguramos la integridad y estabilidad de la infraestructura tecnólogica de la empresa.  Diseñamos e implementamos politicas de seguridad</p>
                       </div>
                     </div>
-                    <div class="col-3 servicio" style="margin-right: 40px;">
+                    <div class="col-6 col-lg-3 servicio" style="margin-right: 40px;">
                       <div class="row" style="display: flex;align-items: center;justify-content: center;">
-                        <h6 class="col-12 servTitle">ARMED SECURITY</h6>
-                        <p class="col-12 servDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <div class="col-12 align">
+                          <img class="col-5 servImg" src="./images/protec-servicio-2.png" alt="">
+                        </div>
+                        <h6 class="col-12 col-lg-10 servTitle">CONSULTORÍA IT</h6>
+                        <p class="col-12 servDesc">Asesoramiento para la toma de decisiones Sistemas Informáticos y Sistemas de Seguridad. Outsourcing de Gerencia de Sistemas. Análisis de Riesgos de Seguridad</p>
                       </div>
                     </div>
-                    <div class="col-3 servicio">
+                    <div class="col-6 col-lg-3 servicio">
                       <div class="row" style="display: flex;align-items: center;justify-content: center;">
-                        <h6 class="col-12 servTitle">ARMED SECURITY</h6>
-                        <p class="col-12 servDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <div class="col-12 align">
+                          <img class="col-5 servImg" src="./images/protec-servicio-3.png" alt="">
+                        </div>
+                        <h6 class="col-12 col-lg-10 servTitle">SISTEMAS DE SEGURIDAD Y CONTROL</h6>
+                        <p class="col-12 servDesc">Diseño, implementación y puesta en marcha de Sistemas de Seguridad y Control. Administración de Servidores.</p>
                       </div>
                     </div>
-                    <div class="col-12" style="display: flex;justify-content: center;">
+                    <div class="col-6 col-lg-3 servicio" style="margin-right: 40px;">
+                      <div class="row" style="display: flex;align-items: center;justify-content: center;">
+                        <div class="col-12 align">
+                          <img class="col-5 servImg" src="./images/protec-servicio-4.png" alt="">
+                        </div>
+                        <h6 class="col-12 col-lg-10 servTitle">DISEÑO E IMPLEMENTACIÓN DE PROYECTOS</h6>
+                        <p class="col-12 servDesc">Aseguramos la integridad y estabilidad de la infraestructura tecnologíca de la empresa. Diseñamos e implementamos políticas de seguridad</p>
+                      </div>
+                    </div>
+                    <div class="col-6 col-lg-3 servicio" style="margin-right: 40px;">
+                      <div class="row" style="display: flex;align-items: center;justify-content: center;">
+                        <div class="col-12 align">
+                          <img class="col-5 servImg" src="./images/protec-servicio-5.png" alt="">
+                        </div>
+                        <h6 class="col-12 col-lg-10 servTitle">GESTIÓN DE PROYECTOS</h6>
+                        <p class="col-12 servDesc">Asesoramiento para la toma de desiciones en Sistemas de Seguridad. Outsourcing de Gerencia de Sistemas. Análisis de Riesgos de Seguridad.</p>
+                      </div>
+                    </div>
+                    <div class="col-6 col-lg-3 servicio">
+                      <div class="row" style="display: flex;align-items: center;justify-content: center;">
+                        <div class="col-12 align">
+                          <img class="col-5 servImg" src="./images/protec-servicio-6.png" alt="">
+                        </div>
+                        <h6 class="col-12 col-lg-10 servTitle">MONITOREO DE ESTADO</h6>
+                        <p class="col-12 servDesc">Diselo, implementación y puesta en marcha de Sistemas de Seguridad y Control. Administración de Servidores.</p>
+                      </div>
+                    </div>
+                    <div class="col-6 col-lg-3 servicio" style="margin-right: 40px;">
+                      <div class="row" style="display: flex;align-items: center;justify-content: center;">
+                        <div class="col-12 align">
+                          <img class="col-5 servImg" src="./images/protec-servicio-7.png" alt="">
+                        </div>
+                        <h6 class="col-12 col-lg-10 servTitle">GESTIÓN DE INFRAESTRUCTURA</h6>
+                        <p class="col-12 servDesc">Aseguramos la integridad y estabilidad de la infraestructura tecnológica de la empresa. Diseñamos e implementamos políticas de seguridad</p>
+                      </div>
+                    </div>
+                    <div class="col-6 col-lg-3 servicio" style="margin-right: 40px;">
+                      <div class="row" style="display: flex;align-items: center;justify-content: center;">
+                        <div class="col-12 align">
+                          <img class="col-5 servImg" src="./images/protec-servicio-8.png" alt="">
+                        </div>
+                        <h6 class="col-12 col-lg-10 servTitle">ANÁLISIS DE REQUERIMIENTOS</h6>
+                        <p class="col-12 servDesc">Asesoramiento para la toma de desiciones en Sistemas de Seguridad. Outsourcing de Gerencia de Sistemas. Análisis de Riesgos de Seguridad.</p>
+                      </div>
+                    </div>
+                    <div class="col-6 col-lg-3 servicio">
+                      <div class="row" style="display: flex;align-items: center;justify-content: center;">
+                        <div class="col-12 align">
+                          <img class="col-5 servImg" src="./images/protec-servicio-9.png" alt="">
+                        </div>
+                        <h6 class="col-12 col-lg-10 servTitle">SOPORTE TÉCNICO</h6>
+                        <p class="col-12 servDesc">Diselo, implementación y puesta en marcha de Sistemas de Seguridad y Control. Administración de Servidores.</p>
+                      </div>
+                    </div>
+                    <!--<div class="col-12" style="display: flex;justify-content: center;">
                       <button class="col-5 col-lg-2 boton srvbtn verMas">VIEW MORE</button>
-                    </div>
+                    </div>-->
                   </div>
 
-                  <div class="col-12 cerrado">
-                    <div class="row" style="display: flex;align-items: center;justify-content: center;">
-                    <div class="col-3 servicio" style="margin-right: 40px;">
-                      <div class="row" style="display: flex;align-items: center;justify-content: center;">
-                      <h6 class="col-12 servTitle">ARMED SECURITY</h6>
-                      <p class="col-12 servDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                      </div>
-                    </div>
-                    <div class="col-3 servicio" style="margin-right: 40px;">
-                      <div class="row" style="display: flex;align-items: center;justify-content: center;">
-                        <h6 class="col-12 servTitle">ARMED SECURITY</h6>
-                        <p class="col-12 servDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                      </div>
-                    </div>
-                    <div class="col-3 servicio">
-                      <div class="row" style="display: flex;align-items: center;justify-content: center;">
-                        <h6 class="col-12 servTitle">ARMED SECURITY</h6>
-                        <p class="col-12 servDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                      </div>
-                    </div>
-                    
-                    <div class="col-12" style="display: flex;justify-content: center;">
-                      <button class="col-5 col-lg-2 boton srvbtn verMenos">VIEW LESS</button>
-                    </div>
-                  </div>
+                  
                 
               </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-12 serv mobile">
+        <div class="row" style="display: flex;align-items: center;justify-content: center;">
+
+          <h6 class="col-12 we">WE PROVIDE</h6>
+          <h4 class="col-12 se">NUESTROS SERVICIOS</h4>
+          <p class="col-12 col-lg-6 serv">Brindamos servicios IT con un claro enfoque en tecnologías de seguridad y control, seguridad informática y administración de redes</p>
+
+          <div class="col-12">
+            <div class="row align" style="justify-content: space-around !important;">
+
+              <div class="col-5 servicio">
+                <div class="row" style="display: flex;align-items: center;justify-content: center;">
+                  <div class="col-12 align">
+                    <img class="col-5 servImg" src="./images/protec-servicio-1.png" alt="">
+                  </div>
+                  <h6 class="col-12 col-lg-10 servTitle">REDES Y TELECOMUNICACIONES</h6>
+                  <p class="col-12 servDesc">Aseguramos la integridad y estabilidad de la infraestructura tecnólogica de la empresa.  Diseñamos e implementamos politicas de seguridad</p>
+                </div>
+              </div>
+              <div class="col-5 servicio">
+                <div class="row" style="display: flex;align-items: center;justify-content: center;">
+                  <div class="col-12 align">
+                    <img class="col-5 servImg" src="./images/protec-servicio-2.png" alt="">
+                  </div>
+                  <h6 class="col-12 col-lg-10 servTitle">REDES Y TELECOMUNICACIONES</h6>
+                  <p class="col-12 servDesc">Aseguramos la integridad y estabilidad de la infraestructura tecnólogica de la empresa.  Diseñamos e implementamos politicas de seguridad</p>
+                </div>
+              </div>
+              <div class="col-5 servicio">
+                <div class="row" style="display: flex;align-items: center;justify-content: center;">
+                  <div class="col-12 align">
+                    <img class="col-5 servImg" src="./images/protec-servicio-3.png" alt="">
+                  </div>
+                  <h6 class="col-12 col-lg-10 servTitle">REDES Y TELECOMUNICACIONES</h6>
+                  <p class="col-12 servDesc">Aseguramos la integridad y estabilidad de la infraestructura tecnólogica de la empresa.  Diseñamos e implementamos politicas de seguridad</p>
+                </div>
+              </div>
+              <div class="col-5 servicio">
+                <div class="row" style="display: flex;align-items: center;justify-content: center;">
+                  <div class="col-12 align">
+                    <img class="col-5 servImg" src="./images/protec-servicio-4.png" alt="">
+                  </div>
+                  <h6 class="col-12 col-lg-10 servTitle">REDES Y TELECOMUNICACIONES</h6>
+                  <p class="col-12 servDesc">Aseguramos la integridad y estabilidad de la infraestructura tecnólogica de la empresa.  Diseñamos e implementamos politicas de seguridad</p>
+                </div>
+              </div>
+              <div class="col-5 servicio">
+                <div class="row" style="display: flex;align-items: center;justify-content: center;">
+                  <div class="col-12 align">
+                    <img class="col-5 servImg" src="./images/protec-servicio-5.png" alt="">
+                  </div>
+                  <h6 class="col-12 col-lg-10 servTitle">REDES Y TELECOMUNICACIONES</h6>
+                  <p class="col-12 servDesc">Aseguramos la integridad y estabilidad de la infraestructura tecnólogica de la empresa.  Diseñamos e implementamos politicas de seguridad</p>
+                </div>
+              </div>
+              <div class="col-5 servicio">
+                <div class="row" style="display: flex;align-items: center;justify-content: center;">
+                  <div class="col-12 align">
+                    <img class="col-5 servImg" src="./images/protec-servicio-6.png" alt="">
+                  </div>
+                  <h6 class="col-12 col-lg-10 servTitle">REDES Y TELECOMUNICACIONES</h6>
+                  <p class="col-12 servDesc">Aseguramos la integridad y estabilidad de la infraestructura tecnólogica de la empresa.  Diseñamos e implementamos politicas de seguridad</p>
+                </div>
+              </div>
+              <div class="col-5 servicio">
+                <div class="row" style="display: flex;align-items: center;justify-content: center;">
+                  <div class="col-12 align">
+                    <img class="col-5 servImg" src="./images/protec-servicio-7.png" alt="">
+                  </div>
+                  <h6 class="col-12 col-lg-10 servTitle">REDES Y TELECOMUNICACIONES</h6>
+                  <p class="col-12 servDesc">Aseguramos la integridad y estabilidad de la infraestructura tecnólogica de la empresa.  Diseñamos e implementamos politicas de seguridad</p>
+                </div>
+              </div>
+              <div class="col-5 servicio">
+                <div class="row" style="display: flex;align-items: center;justify-content: center;">
+                  <div class="col-12 align">
+                    <img class="col-5 servImg" src="./images/protec-servicio-8.png" alt="">
+                  </div>
+                  <h6 class="col-12 col-lg-10 servTitle">REDES Y TELECOMUNICACIONES</h6>
+                  <p class="col-12 servDesc">Aseguramos la integridad y estabilidad de la infraestructura tecnólogica de la empresa.  Diseñamos e implementamos politicas de seguridad</p>
+                </div>
+              </div>
+              <div class="col-5 servicio">
+                <div class="row" style="display: flex;align-items: center;justify-content: center;">
+                  <div class="col-12 align">
+                    <img class="col-5 servImg" src="./images/protec-servicio-9.png" alt="">
+                  </div>
+                  <h6 class="col-12 col-lg-10 servTitle">REDES Y TELECOMUNICACIONES</h6>
+                  <p class="col-12 servDesc">Aseguramos la integridad y estabilidad de la infraestructura tecnólogica de la empresa.  Diseñamos e implementamos politicas de seguridad</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 alianzas" style="display: flex;align-items: center;justify-content: center;">
+        <div class="row" style="display: flex;align-items: center;justify-content: center;">
+          <h6 class="col-12 we">ALIANZAS COMERCIALES</h6>
+          <div class="col-10 align ali">
+            <div class="row align">
+              <img src="./images/alianza-logo-1.png" alt="" class="col-6 col-lg-3">
+              <img src="./images/alianza-logo-2.png" alt="" class="col-6 col-lg-3">
+              <img src="./images/alianza-logo-3.png" alt="" class="col-6 col-lg-3 desk">
+            </div>
+          </div>
+          <div class="col-10 align ali" style="padding-top: 25px;">
+            <div class="row align">
+              <img src="./images/alianza-logo-3.png" alt="" class="col-6 col-lg-3 mobile" style="padding-bottom: 25px;">
+              <img src="./images/alianza-logo-4.png" alt="" class="col-6 col-lg-3 logo4">
+              <img src="./images/alianza-logo-5.png" alt="" class="col-6 col-lg-3">
+              <img src="./images/alianza-logo-6.png" alt="" class="col-6 col-lg-3">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 exp">
+        <div class="container-fluid col-12 col-lg-10">
+          <div class="row" style="display: flex;align-items: center;justify-content: center;">
+            <div class="col-12 col-lg-6">
+              <div class="col-12">
+                <h6 class="col-12 sobre">SOBRE</h6>
+                <h4 class="col-12 nos">NOSOTROS</h4>
+              </div>
+              <p class="col-12 descE">Contamos con sólida experiencia en gestión de infraestructura tecnológica, diseño e implementación de sistemas de seguridad, análisis de riesgos de seguridad informática y consultoría IT</p>
+              <div class="col-12" style="padding-left: 0px;">
+                  <p class="col-12 col-lg-6"><i class="fas fa-check"></i> Políticas de seguridad</p>
+                  <p class="col-12 col-lg-6"><i class="fas fa-check"></i> Backup y contingencia</p>
+                  <p class="col-12 col-lg-6"><i class="fas fa-check"></i> Trabajo Remoto</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 video">
+              <!--<iframe width="100%" height="315" src="https://www.youtube.com/embed/ThiCMd5kGbE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+              <embed src="./images/institucional.mp4" type="" width="100%" height="315px">
             </div>
           </div>
         </div>
@@ -119,9 +277,9 @@
 
           <div class="col-12 cotizacion" style="display: flex;align-items: center;justify-content: center;">
             <div class="row" style="display: flex;align-items: center;justify-content: center;">
-              <h6 class="col-12 we">PONETE EN CONTACTO</h6>
-              <h4 class="col-12 so">SOLICITA UNA COTIZACION</h4>
-              <button class="col-5 col-lg-2 boton cotbtn">VIEW MORE</button>
+              <h6 class="col-12 we" style="padding-bottom: 5px;">TRABAJEMOS JUNTOS</h6>
+              <h4 class="col-12 so">SOLICITÁ UNA COTIZACIÓN</h4>
+              <button class="col-4 col-lg-2 botonA cotbtn">CONTACTAR</button>
             </div>
           </div>
 
@@ -129,97 +287,89 @@
             <div class="container">
               <div class="row" style="display: flex;align-items: center;justify-content: center;">
                 <h6 class="col-12 we">WE PROVIDE</h6>
-                <h4 class="col-12 se" style="padding-bottom: 40px;">SECURITY SERVICES</h4>
-                <div class="col-10 col-lg-4 info"></div>
-                <div class="col-10 col-lg-4 info"></div>
-                <div class="col-10 col-lg-4 info"></div>
-                <div class="col-10 col-lg-4 info"></div>
+                <h4 class="col-12 se" style="padding-bottom: 40px;">NUESTRAS SOLUCIONES</h4>
+                <div class="col-10 col-lg-4 info info1 align">
+                  <h3>PYMES</h3>
+                </div>
+                <div class="col-10 col-lg-4 info info2 align">
+                  <h3>FIANZAS</h3>
+                </div>
+                <div class="col-10 col-lg-4 info info3 align">
+                  <h3>INDUSTRIA</h3>
+                </div>
+                <div class="col-10 col-lg-4 info info4 align">
+                  <h3>INSTITUCIONES</h3>
+                </div>
+                <div class="row col-12 align collapse" id="content">
+                  <div class="col-10 col-lg-4 info info1 align">
+                    <h3>PYMES</h3>
+                  </div>
+                  <div class="col-10 col-lg-4 info info2 align">
+                    <h3>FIANZAS</h3>
+                  </div>
+                  <div class="col-10 col-lg-4 info info3 align">
+                    <h3>INDUSTRIA</h3>
+                  </div>
+                  <div class="col-10 col-lg-4 info info4 align">
+                    <h3>INSTITUCIONES</h3>
+                  </div>
+                  <div class="col-10 col-lg-4 info info3 align">
+                    <h3>INDUSTRIA</h3>
+                  </div>
+                  <div class="col-10 col-lg-4 info info4 align">
+                    <h3>INSTITUCIONES</h3>
+                  </div>
+                </div>
                 <div class="col-10" style="display: flex;align-items: center;justify-content: center;">
-                  <button class="col-5 col-lg-2 boton srvbtn">VIEW MORE</button>
+                  <button class="col-5 col-lg-2 boton srvbtn verTodas" data-toggle="collapse" data-target="#content" >VER TODAS</button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-12 cotizacion" style="display: flex;align-items: center;justify-content: center;">
-            <div class="row" style="display: flex;align-items: center;justify-content: center;">
-              <h6 class="col-12 we">COMPROMISO</h6>
-              <h4 class="col-12 so">ALIADOS CON</h4>
-            </div>
-          </div>
-
-          <div class="col-12 contact" style="display: flex;align-items: center;justify-content: center;">
+          <footer class="col-12 contact" style="display: flex;align-items: center;justify-content: center;">
             <div class="container">
               <div class="row" style="display: flex;align-items: center;justify-content: center;">
-                <div class="col-12">
-                  <div class="row">
-                    <h4 class="col-12 col-lg-8 contactF">CONTACT FORM</h4>
-                    <h4 class="col-12 col-lg-4 contactF desk">CONTACT INFO</h4>
+                
+                <h4 class="col-12 col-lg-7 contactF">COMPLETÁ LOS DATOS</h4>
+                <h4 class="col-12 col-lg-3 contactF desk" style="padding-left: 40px !important;">INFO</h4>
+                  
+                
+                <form action="" class="col-12 col-lg-7">
+                  <div style="display: flex;justify-content: space-between;">
+                    <input type="text" placeholder="NOMBRE" class="col-6 inp">
+                    <input type="text" placeholder="TELEFONO" class="col-6 inp" style="padding-right: 0px;margin-left: 5px;">
                   </div>
-                </div>
-                <div class="col-12 col-lg-8">
-                  <form action="" class="col-12">
-                    <div class="row">
-                      <input type="text" placeholder="FULL NAME" class="col-5 inp" style="margin-right: 15px;">
-                      <input type="text" placeholder="EMAIL ADRESS" class="col-5 inp">
-                      <input type="text" placeholder="PHONE NUMBER" class="col-5 inp" style="margin-right: 15px;">
-                      <input type="text" placeholder="SUBJET" class="col-5 inp">
-                      <textarea type="text" placeholder="MESSAGE.." class="msg">MESSAGE..</textarea>
+                  <input type="text" placeholder="EMAIL" class="col-12 inp">
+                  <input type="text" placeholder="MENSAJE.." class="col-12 inp1">
+                  <button type="submit" class="col-4 col-lg-2 botonA enviar mobile" style="margin-top: 10px !important;">Enviar</button>
+                </form>
+                
+              <h4 class="col-12 col-lg-2 contactF mobile" style="padding-top: 40px;">INFO</h4>
+              <div class="col-12 col-lg-3">
+                  <div class="row infoA" style="display: flex;align-items: start;justify-content: center;">
+                    <p class="col-12 contactInfo"><i class="fas fa-square-full"></i> +54 9 221 563 6638</p>
+                    <p class="col-12 contactInfo"><i class="fas fa-square-full"></i> Guido 272, Gral Pacheco, GBA Norte </p>
+                    <p class="col-12 contactInfo"><i class="fas fa-square-full"></i> ventas@protec.com.ar </p>
+                    <p class="col-12 contactInfo1">¿Buscás soluciones de Software a medida?</p>
+                    <p class="col-12 contactInfo2">Encontranos en:</p>
+                    <div class="col-12" style="padding-left: 0px !important;display: flex;justify-content: start;">
+                      <img src="./images/oxalde.png" alt="" class="col-6 mobile" style="padding-left: 0px !important;">
                     </div>
-                  </form>
-                </div>
-                <h4 class="col-12 col-lg-4 contactF mobile" style="padding-top: 20px;">CONTACT INFO</h4>
-                <div class="col-12 col-lg-4">
-                  <div class="row" style="display: flex;align-items: start;justify-content: center;">
-                    <p class="col-12 contactInfo"><i class="iconsC fas fa-map-marker-alt"></i> </p>
-                    <p class="col-12 contactInfo"><i class="iconsC fas fa-phone-alt"></i> </p>
-                    <p class="col-12 contactInfo"><i class="iconsC fas fa-envelope"></i> </p>
-                    <p class="col-12 contactInfo"><i class="iconsC far fa-clock"></i> </p>
+                    <img src="./images/oxalde.png" alt="" class="col-12 desk" style="padding-left: 0px !important;">
+                    <a href="" class="col-12 oxaldePag">oxalde.com</a>
                   </div>
+                </div>
+                <div class="col-10">
+                  <button type="submit" class="col-4 col-lg-2 botonA enviar desk" style="margin-top: 10px !important;">Enviar</button>
                 </div>
               </div>
             </div>
-          </div>
+          </footer>
 
     </main>
 
-    <footer>
-      <div class="container-fluid">
-        <div class="row" style="display: flex;align-items: center;justify-content: center;">
-
-          <div class="col-8">
-            <div class="col-12">
-              <div class="row" style="display: flex;align-items: center;justify-content: center;">
-                <h4 class="col-4 footTitles">RECENT NEWS</h4>
-                <h4 class="col-4 footTitles">SECURE GUARD</h4>
-                <h4 class="col-4 footTitles">NEWSLETTER</h4>
-              </div>
-            </div>
-            <div class="col-12" style="padding-top: 25px;border-bottom: 1px solid #f1f2f6;padding-bottom: 65px;">
-              <div class="row" style="display: flex;align-items: center;justify-content: center;">
-                <div class="col-4">
-                  <p class="footTitles">Deja tu email</p>
-                </div>
-                <div class="col-4">
-                  <p class="footTitles">Deja tu email</p>
-                </div>
-                <div class="col-4">
-                  <p class="footTitles">Deja tu email</p>
-                  <form action="" class="col-12">
-                    <div class="row" style="display: flex;align-items: center;justify-content: center;">
-                      <input type="text" placeholder="EMAIL" class="col-12 inpF" style="margin-right: 15px;">
-                      <button type="submit" class="inpF2">Suscribe</button>
-                    </div>
-                    
-                  </form>
-                </div>
-              </div>
-            </div>
-            <p class="col-12">copyright 2020</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+    
   </body>
 
   <script src="../javascripts/verMas.js"></script>

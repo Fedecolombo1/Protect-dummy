@@ -1,11 +1,18 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
 header {
-  position: fixed;
+  position: absolute;
   z-index: 4;
   width: 100%;
   background-color: rgba(22, 22, 22, 0.897);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.align{
+  display: flex;align-items: center;justify-content: center;
 }
 
 .head {
@@ -18,17 +25,22 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
 }
 
 .nav{
-  border-top: 1px solid grey;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid rgb(128,128,128, 0.2);
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px !important;
 }
 
 .sec {
+  font-size: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +49,7 @@ header {
 }
 .sec:hover{
   transition: .7s;
-  color: #00B7FF;
+  color: #fad11d;
   text-decoration: none;
 }
 
@@ -45,18 +57,46 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 620px;
-  background: black;
-  border-bottom: 4px solid #00B7FF;
+  height: 660px;
+  background-image: url("../images/banner-domo-camara-seguridad.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
-.txtP{
+
+.portada:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.txtP {
   text-align: center;
   color: white;
 }
 
+h1.txtP{
+  text-align: center;
+  font-weight: 800;
+  font-size: 60px;
+  color: white;
+}
+
 h2.txtP{
+  font-size: 22px;
+  background: -webkit-linear-gradient(#e2ba0b, #fad11d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
   margin-bottom: 0px;
-  font-size: 21px;
+  padding-top: 160px;
+  padding-bottom: 10px;
 }
 
 .btns{
@@ -67,34 +107,55 @@ h2.txtP{
 }
 
 .boton{
-  font-size: 13px;
-  font-weight: 700;
+  margin-top: 80px;
+  font-size: 11px;
+  font-weight: 500;
   color: white;
   background: none;
   border: 1px solid white;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .boton:hover{
-  background: #00B7FF;
-  border: 1px solid #00B7FF;
+  background: #fad11d;
+  border: 1px solid #fad11d;
+  transition: .7s;
+}
+
+
+.botonA{
+  margin-top: 80px;
+  font-size: 11px;
+  font-weight: 500;
+  color: white;
+  background:  #fad11d;
+  border: 1px solid #fad11d;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.botonA:hover{
+  background: #e2ba0b;
+  border: 1px solid #e2ba0b;
   transition: .7s;
 }
 
 .exp{
-  padding-top: 80px;
-  padding-bottom: 80px;
-  border-bottom: 1px solid #f1f2f6;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-top: 1px solid #f1f2f6;
 }
 
 .descE {
-  padding-top: 35px !important;
+  padding-top: 15px !important;
+  padding-bottom: 35px !important;
   color: grey;
+  font-size: 15px;
 }
 
 .fa-check{
-  color: #00B7FF;
+  color: #fad11d;
 }
 
 div.serv{
@@ -104,13 +165,17 @@ div.serv{
 
 .we{
   text-align: center;
-  font-size: 13px;
-  color: #00B7FF;
+  font-size: 11px;
+  font-weight: 800;
+  color: #fad11d;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
 }
 
 .se{
   text-align: center;
-  font-weight: 700;
+  font-weight: 1000 !important;
+  font-size: 28px;
 }
 
 .so{
@@ -123,6 +188,8 @@ p.serv{
   text-align: center;
   color: grey;
   padding-bottom: 20px;
+  padding-top: 10px;
+  font-size: 13px;
 }
 
 .servicio{
@@ -132,17 +199,29 @@ p.serv{
   margin-top: 10px;
   margin-bottom: 10px;
   box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.10);
-  height: 220px;
+  height: 255px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: 0.4s;
+}
+
+.servicio:hover{
+  transform:scale(1.1)
+}
+
+.servImg{
+  padding-bottom: 10px;
 }
 
 .servTitle{
   text-align: center;
-  font-weight: 800;
-  font-size: 13px;
+  font-weight: 1000;
+  font-size: 16px;
   color: black;
 }
 
 .servDesc {
+  padding-top: 5px;
   text-align: center;
   font-size: 12px;
   color: grey;
@@ -151,6 +230,48 @@ p.serv{
 .cotizacion{
   height: 220px;
   background-color: black;
+  background-image: url("../images/protec-gestion-de-infraestructura.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.cotizacion:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.alianzas{
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: black;
+  background-image: url("../images/alianzas-comerciales-protec-informatica-seguridad.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.alianzas:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.ali{
+  justify-content: space-evenly !important;
 }
 
 .cotbtn{
@@ -161,8 +282,8 @@ p.serv{
 .srvbtn{
   font-size: 11px;
   margin-top: 20px;
-  color: #00B7FF;
-  border: #00B7FF 1px solid;
+  color: #fad11d;
+  border: #fad11d 1px solid;
 }
 
 .srvbtn:hover{
@@ -175,20 +296,63 @@ p.serv{
 }
 
 .info{
-  background-color: tomato;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   height: 100px;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
+  transition: 0.5s;
+}
+
+.info:hover{
+  transform:scale(1.1)
+}
+
+.info:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.7;
+}
+
+div.info h3{
+  color: #fad11d;
+  font-size: 23px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  position: relative;
+}
+
+.info1{
+  background-image: url("../images/soluciones-pymes.jpg");
+  background-position: center;
+}
+.info2{
+  background-image: url("../images/soluciones-bancos.jpg");
+}
+.info3{
+  background-image: url("../images/soluciones-industrias.jpg");
+  background-position: bottom;
+}
+.info4{
+  background-image: url("../images/soluciones-logisticas.jpg");
 }
 
 .contact{
   padding-top: 80px;
   padding-bottom: 80px;
+  color: white;
 }
 
 h4.contactF{
+  color: white;
   font-weight: 700;
   padding-bottom: 20px;
 }
@@ -198,21 +362,23 @@ h4.contactF{
   padding-bottom: 8px;
   margin-top: 8px;
   margin-bottom: 8px; 
-  border: 2px solid #bababa;
-  color: #bababa;
+  border: 2px solid #666666;
+  color:#666666;
+  background: none;
   font-style: italic;
   font-size: 13px;
 }
 
-textarea.msg{
+.inp1{
   padding-top: 8px;
   padding-bottom: 8px;
   padding-right: 15px;
   padding-left: 15px;
   margin-top: 8px;
   margin-bottom: 8px; 
-  border: 2px solid #bababa;
-  color: #bababa;
+  border: 2px solid #666666;
+  color: #666666;
+  background: none;
   font-style: italic;
   font-size: 13px;
   height: 120px;
@@ -227,14 +393,33 @@ textarea.msg{
 
 footer{
   padding-top: 80px;
-  height: 400px;
+  height: 100%;
+  background-image: url("../images/protec-gestion-de-proyectos-sistemas-de-seguridad.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-bottom: 7px solid #e2ba0b;
+}
+
+footer:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   background-color: black;
-  border-bottom: 7px solid #3275fe;
+  opacity: 0.9;
 }
 
 .footTitles{
   text-align: center;
   color: white;
+}
+
+.fa-square-full{
+  color: #fad11d;
+  font-size: 11px;
 }
 
 .inpF{
@@ -279,12 +464,68 @@ footer{
   transition: .7s;
 }
 
+.sobre{
+  padding-left: 0px !important;
+  font-weight: 800;
+  color: #fad11d;
+  letter-spacing: 1px;
+}
+
+.nos{
+  padding-left: 0px !important;
+  font-size: 24px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.contactInfo{
+  font-size: 13px;
+  margin-bottom: 5px;
+  padding: 0px !important;
+  font-style: italic;
+  color: #bababa;
+}
+
+.contactInfo1{
+  font-size: 13px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  padding: 0px !important;
+}
+
+.contactInfo2{
+  font-size: 13px;
+  color: #fad11d;
+  padding: 0px !important;
+  font-weight: 700;
+}
+
+.infoA{
+  padding-left: 45px;
+}
+
+.oxaldePag{
+  padding-top: 5px;
+  padding-left: 0px !important;
+  color: grey;
+  font-size: 15px;
+}
+.oxaldePag:hover{
+  padding-left: 0px !important;
+  color: #3275fe;
+  text-decoration: none;
+}
+.enviar{
+  font-size: 13px;
+}
+
 .desk{
   display: inline-block;
 }
 .mobile{
   display: none;
 }
+
 
 @media(max-width: 768px){
   .desk{
@@ -293,15 +534,38 @@ footer{
   .mobile{
     display: inline-block !important;
   }
+  h1.txtP{
+    font-size: 32px;
+  }
+  h2.col-12.txtP{
+    padding-top: 60px;
+  }
+ 
+  .servTitle{
+    font-size: 15px;
+    padding: 0px !important;
+  }
+  .servImg{
+    font-size: 25px;
+  }
+  button.col-4.col-lg-1.boton{
+    margin-top: 40px;
+  }
   .fa-bars{
     font-size: 23px;
     color: white;
+  }
+  .fa-bars:active{
+    color: #e2ba0b;
   }
   .portada{
     height: 550px;
   }
   .video{
     padding-top: 30px;
+  }
+  header.mobile{
+    z-index: 70;
   }
   nav{
     position: fixed;
@@ -310,7 +574,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    padding-top: 70px;
     height: 100%;
     width: 100%;
   }
@@ -321,9 +585,13 @@ footer{
   }
   li a{
     color: white;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
     padding-top: 10px;
+  }
+  li a:hover{
+    color: #fad11d;
+    text-decoration: none;
   }
   .cerrado{
     
@@ -335,5 +603,12 @@ footer{
     
     left: 0%;
     transition: all .5s;
+  }
+
+  .logo4{
+    padding-bottom: 25px;
+  }
+  .infoA{
+    padding-left: 15px;
   }
 }
